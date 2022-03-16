@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss tailwind.css -o ./style/styles.css --watch --verbose",
-    "prod": "postcss --env production tailwind.css -o ./style/styles.css --verbose"
+    "dev": "postcss tailwind.css -o ./assets/css/styles.css --watch --verbose",
+    "prod": "postcss --env production tailwind.css -o ./assets/css/styles.css --verbose"
   },
   "keywords": [],
   "author": "",
