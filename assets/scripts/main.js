@@ -6,7 +6,7 @@ const main = async () => {
     for (const id of ["first", "second", "third"]) {
         $(`#${id}`).classList.remove("section-hidden")
         $(`#${id}`).classList.add("section-show")
-        await wait(1000)
+        await wait(3000)
         if (id == "third") return;
         $(`#${id}`).classList.add("section-hidden")
         $(`#${id}`).classList.remove("section-show")
