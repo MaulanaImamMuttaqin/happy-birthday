@@ -10,9 +10,65 @@
 </head>
 
 <body>
-    <div class="h-screen center border border-black bg-blue-300 text-3xl font-thin text-white">
-        this is a template code for <span class="p-2 font-semibold"> tailwind postcss </span>
+    <div id="main"
+        class="h-screen w-screen center border border-black bg-gradient-to-tr from-cyan-700 via-blue-500 to-blue-300">
+
+        <div id="balloon-container"></div>
+        <div id="first"
+            class="p-10 flex flex-col justify-center items-center absolute transition-all duration-200  section-hidden">
+            <h3 class="text-4xl font-bold tracking-widest">Assalamualaikum</h3>
+            <p class="text-3xl font-bold  text-center mb-10">Cut Nanda Nurbadriani S.T., M.T</p>
+            <p>ehhh uni uda ulang tahun yaaaa :D</p>
+        </div>
+
+        <div id="second"
+            class="p-10 flex flex-col justify-center items-center gap-10 transition-all duration-200 absolute section-hidden">
+            <h2 class="text-3xl text-center">
+                <p>I wanted to do something special for you, so I made this for you </p>
+                <p> (Dari Muhammad Jurej Alhamdi)</p>
+            </h2>
+        </div>
+
+        <div id="third"
+            class=" flex flex-col justify-between items-center h-[70%] transition-all duration-200  absolute section-hidden">
+
+
+            <div class="flex flex-col justify-between items-center">
+                <img src="../assets/images/Greeting Font.svg" class="h-52 w-52" alt="happy birthday">
+                <p class="text-xl text-center px-10">
+                    semoga uni uda menjadi pribadi yang lebih baik lagi ya, dan menjadi orang yang dibanggain orang tua,
+                    dan
+                    selalu menjadi kesayangan uda pokoknyaaaa yaaaaa.... dan satu lagii yok semngat yok wisuda bareng
+                    dan
+                    hayo bentar lagi tesis
+                </p>
+            </div>
+            <div class="flex font-bold tracking-widest text-white px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-700 to-blue-600"
+                id="button">
+
+                CLICK ME :D
+            </div>
+        </div>
+
+        <div id="song"
+            class="bg-black py-10 flex overflow-hidden absolute center   w-screen h-screen transition-all  duration-200 section-hidden">
+            <div class="background-candle absolute h-screen w-screen z-30"></div>
+            <div class="absolute z-40 self-start">
+                <img src="../assets/images/hbd.png" alt="" srcset="">
+            </div>
+            <div class="absolute scale-75 overflow-hidden rounded-2xl">
+                <img src="../assets/images/nanda.jpeg" alt="" srcset="">
+            </div>
+            <div class="flex self-end  center z-40">
+                <img src="../assets/images/cake.png" class="w-full scale-150 translate-x-4 " alt="">
+            </div>
+            <!-- <div class="text-white">
+                <img src="../assets/images/Greeting Font.svg" class="h-52 w-52" alt="happy birthday">
+            </div> -->
+        </div>
     </div>
+
+    <script src="../assets/scripts/main.js" type="module"></script>
 </body>
 
 </html>

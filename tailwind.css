@@ -2,6 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-.center{
-    @apply flex justify-center items-center
+.center {
+    @apply flex justify-center items-center;
+}
+
+.section-hidden {
+    @apply opacity-0 scale-75 -translate-y-10 z-10;
+}
+
+.section-show {
+    @apply opacity-100 scale-100 z-20;
+}
+
+.section-show-slide-up {
+    @apply opacity-100 translate-y-0 z-50;
+}
+
+#balloon-container {
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.background-candle {
+    background: rgb(181, 130, 0);
+    background: radial-gradient(circle, rgba(181, 130, 0, 0.039653361344537785) 0%, rgba(255, 119, 0, 0.258140756302521) 33%, rgba(8, 6, 0, 1) 78%);
+}
+
+.balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+}
+
+.balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-300vh);
+        opacity: 0;
+    }
 }
